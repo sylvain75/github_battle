@@ -33,4 +33,5 @@ create doctype with ```<div id="app"></div>``` in the body
       //babel-loader convert jsx + ES6syntax into "Normal JavaScript"
     ]
   }
-}```
+}
+```
