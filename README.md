@@ -19,10 +19,10 @@ create doctype with ```<div id="app"></div>``` in the body
 
 ```touch webpack.config.js``` in the root directory
 ->
-```module.exports = {
-  entry: [
-    './app/index.js'
-  ],
+```module.exports = {```
+  ```entry: [```
+    ```'./app/index.js'```
+  ```],```
   output: {
     path: __dirname + '/dist',
     filename: index_bundle.js
@@ -33,5 +33,4 @@ create doctype with ```<div id="app"></div>``` in the body
       //babel-loader convert jsx + ES6syntax into "Normal JavaScript"
     ]
   }
-}
-```
+}```
