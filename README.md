@@ -13,4 +13,24 @@ node_modules	package.json
 -> -dev -> for dev-dependency
 
 ```mkdir app && cd app
-touch index.html```
+touch index.html index.js```
+
+create doctype with ```<div id="app"></div>``` in the body
+
+```touch webpack.config.js``` in the root directory
+->
+```module.exports = {
+  entry: [
+    './app/index.js'
+  ],
+  output: {
+    path: __dirname + '/dist',
+    filename: index_bundle.js
+  },
+  module: {
+    loaders: [
+      {test: /\.js$/, exclude: /node_module/, loader: "babel-loader" }
+      //babel-loader convert jsx + ES6syntax into "Normal JavaScript"
+    ]
+  }
+}```
